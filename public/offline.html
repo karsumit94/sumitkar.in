@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#04070f" />
+    <title>Offline | Sumit Kar</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at top, rgba(0, 212, 255, 0.16), transparent 30%),
+          linear-gradient(180deg, #04070f 0%, #08111d 100%);
+        color: #c8d8f0;
+        font-family: Manrope, system-ui, sans-serif;
+      }
+
+      main {
+        width: min(100%, 34rem);
+        padding: 32px;
+        border: 1px solid rgba(0, 212, 255, 0.18);
+        border-radius: 24px;
+        background: rgba(8, 17, 29, 0.86);
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.7;
+        color: rgba(200, 216, 240, 0.78);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Offline</h1>
+      <p>The app shell is installed, but this page needs a connection to refresh. Reconnect and reopen the app to load the latest content.</p>
+    </main>
+  </body>
+</html>

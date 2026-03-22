@@ -1,0 +1,933 @@
+{
+  "title": "Digital Bharat",
+  "pdfPath": "/books/Digital-Bharat.pdf",
+  "coverPath": "/books/Digital-Bharat-Book-Front-Cover.jpg",
+  "pageCount": 231,
+  "aspectRatio": 0.6470588235294118,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "src": "/books/digital-bharat-pages/page-001.webp"
+    },
+    {
+      "pageNumber": 2,
+      "src": "/books/digital-bharat-pages/page-002.webp"
+    },
+    {
+      "pageNumber": 3,
+      "src": "/books/digital-bharat-pages/page-003.webp"
+    },
+    {
+      "pageNumber": 4,
+      "src": "/books/digital-bharat-pages/page-004.webp"
+    },
+    {
+      "pageNumber": 5,
+      "src": "/books/digital-bharat-pages/page-005.webp"
+    },
+    {
+      "pageNumber": 6,
+      "src": "/books/digital-bharat-pages/page-006.webp"
+    },
+    {
+      "pageNumber": 7,
+      "src": "/books/digital-bharat-pages/page-007.webp"
+    },
+    {
+      "pageNumber": 8,
+      "src": "/books/digital-bharat-pages/page-008.webp"
+    },
+    {
+      "pageNumber": 9,
+      "src": "/books/digital-bharat-pages/page-009.webp"
+    },
+    {
+      "pageNumber": 10,
+      "src": "/books/digital-bharat-pages/page-010.webp"
+    },
+    {
+      "pageNumber": 11,
+      "src": "/books/digital-bharat-pages/page-011.webp"
+    },
+    {
+      "pageNumber": 12,
+      "src": "/books/digital-bharat-pages/page-012.webp"
+    },
+    {
+      "pageNumber": 13,
+      "src": "/books/digital-bharat-pages/page-013.webp"
+    },
+    {
+      "pageNumber": 14,
+      "src": "/books/digital-bharat-pages/page-014.webp"
+    },
+    {
+      "pageNumber": 15,
+      "src": "/books/digital-bharat-pages/page-015.webp"
+    },
+    {
+      "pageNumber": 16,
+      "src": "/books/digital-bharat-pages/page-016.webp"
+    },
+    {
+      "pageNumber": 17,
+      "src": "/books/digital-bharat-pages/page-017.webp"
+    },
+    {
+      "pageNumber": 18,
+      "src": "/books/digital-bharat-pages/page-018.webp"
+    },
+    {
+      "pageNumber": 19,
+      "src": "/books/digital-bharat-pages/page-019.webp"
+    },
+    {
+      "pageNumber": 20,
+      "src": "/books/digital-bharat-pages/page-020.webp"
+    },
+    {
+      "pageNumber": 21,
+      "src": "/books/digital-bharat-pages/page-021.webp"
+    },
+    {
+      "pageNumber": 22,
+      "src": "/books/digital-bharat-pages/page-022.webp"
+    },
+    {
+      "pageNumber": 23,
+      "src": "/books/digital-bharat-pages/page-023.webp"
+    },
+    {
+      "pageNumber": 24,
+      "src": "/books/digital-bharat-pages/page-024.webp"
+    },
+    {
+      "pageNumber": 25,
+      "src": "/books/digital-bharat-pages/page-025.webp"
+    },
+    {
+      "pageNumber": 26,
+      "src": "/books/digital-bharat-pages/page-026.webp"
+    },
+    {
+      "pageNumber": 27,
+      "src": "/books/digital-bharat-pages/page-027.webp"
+    },
+    {
+      "pageNumber": 28,
+      "src": "/books/digital-bharat-pages/page-028.webp"
+    },
+    {
+      "pageNumber": 29,
+      "src": "/books/digital-bharat-pages/page-029.webp"
+    },
+    {
+      "pageNumber": 30,
+      "src": "/books/digital-bharat-pages/page-030.webp"
+    },
+    {
+      "pageNumber": 31,
+      "src": "/books/digital-bharat-pages/page-031.webp"
+    },
+    {
+      "pageNumber": 32,
+      "src": "/books/digital-bharat-pages/page-032.webp"
+    },
+    {
+      "pageNumber": 33,
+      "src": "/books/digital-bharat-pages/page-033.webp"
+    },
+    {
+      "pageNumber": 34,
+      "src": "/books/digital-bharat-pages/page-034.webp"
+    },
+    {
+      "pageNumber": 35,
+      "src": "/books/digital-bharat-pages/page-035.webp"
+    },
+    {
+      "pageNumber": 36,
+      "src": "/books/digital-bharat-pages/page-036.webp"
+    },
+    {
+      "pageNumber": 37,
+      "src": "/books/digital-bharat-pages/page-037.webp"
+    },
+    {
+      "pageNumber": 38,
+      "src": "/books/digital-bharat-pages/page-038.webp"
+    },
+    {
+      "pageNumber": 39,
+      "src": "/books/digital-bharat-pages/page-039.webp"
+    },
+    {
+      "pageNumber": 40,
+      "src": "/books/digital-bharat-pages/page-040.webp"
+    },
+    {
+      "pageNumber": 41,
+      "src": "/books/digital-bharat-pages/page-041.webp"
+    },
+    {
+      "pageNumber": 42,
+      "src": "/books/digital-bharat-pages/page-042.webp"
+    },
+    {
+      "pageNumber": 43,
+      "src": "/books/digital-bharat-pages/page-043.webp"
+    },
+    {
+      "pageNumber": 44,
+      "src": "/books/digital-bharat-pages/page-044.webp"
+    },
+    {
+      "pageNumber": 45,
+      "src": "/books/digital-bharat-pages/page-045.webp"
+    },
+    {
+      "pageNumber": 46,
+      "src": "/books/digital-bharat-pages/page-046.webp"
+    },
+    {
+      "pageNumber": 47,
+      "src": "/books/digital-bharat-pages/page-047.webp"
+    },
+    {
+      "pageNumber": 48,
+      "src": "/books/digital-bharat-pages/page-048.webp"
+    },
+    {
+      "pageNumber": 49,
+      "src": "/books/digital-bharat-pages/page-049.webp"
+    },
+    {
+      "pageNumber": 50,
+      "src": "/books/digital-bharat-pages/page-050.webp"
+    },
+    {
+      "pageNumber": 51,
+      "src": "/books/digital-bharat-pages/page-051.webp"
+    },
+    {
+      "pageNumber": 52,
+      "src": "/books/digital-bharat-pages/page-052.webp"
+    },
+    {
+      "pageNumber": 53,
+      "src": "/books/digital-bharat-pages/page-053.webp"
+    },
+    {
+      "pageNumber": 54,
+      "src": "/books/digital-bharat-pages/page-054.webp"
+    },
+    {
+      "pageNumber": 55,
+      "src": "/books/digital-bharat-pages/page-055.webp"
+    },
+    {
+      "pageNumber": 56,
+      "src": "/books/digital-bharat-pages/page-056.webp"
+    },
+    {
+      "pageNumber": 57,
+      "src": "/books/digital-bharat-pages/page-057.webp"
+    },
+    {
+      "pageNumber": 58,
+      "src": "/books/digital-bharat-pages/page-058.webp"
+    },
+    {
+      "pageNumber": 59,
+      "src": "/books/digital-bharat-pages/page-059.webp"
+    },
+    {
+      "pageNumber": 60,
+      "src": "/books/digital-bharat-pages/page-060.webp"
+    },
+    {
+      "pageNumber": 61,
+      "src": "/books/digital-bharat-pages/page-061.webp"
+    },
+    {
+      "pageNumber": 62,
+      "src": "/books/digital-bharat-pages/page-062.webp"
+    },
+    {
+      "pageNumber": 63,
+      "src": "/books/digital-bharat-pages/page-063.webp"
+    },
+    {
+      "pageNumber": 64,
+      "src": "/books/digital-bharat-pages/page-064.webp"
+    },
+    {
+      "pageNumber": 65,
+      "src": "/books/digital-bharat-pages/page-065.webp"
+    },
+    {
+      "pageNumber": 66,
+      "src": "/books/digital-bharat-pages/page-066.webp"
+    },
+    {
+      "pageNumber": 67,
+      "src": "/books/digital-bharat-pages/page-067.webp"
+    },
+    {
+      "pageNumber": 68,
+      "src": "/books/digital-bharat-pages/page-068.webp"
+    },
+    {
+      "pageNumber": 69,
+      "src": "/books/digital-bharat-pages/page-069.webp"
+    },
+    {
+      "pageNumber": 70,
+      "src": "/books/digital-bharat-pages/page-070.webp"
+    },
+    {
+      "pageNumber": 71,
+      "src": "/books/digital-bharat-pages/page-071.webp"
+    },
+    {
+      "pageNumber": 72,
+      "src": "/books/digital-bharat-pages/page-072.webp"
+    },
+    {
+      "pageNumber": 73,
+      "src": "/books/digital-bharat-pages/page-073.webp"
+    },
+    {
+      "pageNumber": 74,
+      "src": "/books/digital-bharat-pages/page-074.webp"
+    },
+    {
+      "pageNumber": 75,
+      "src": "/books/digital-bharat-pages/page-075.webp"
+    },
+    {
+      "pageNumber": 76,
+      "src": "/books/digital-bharat-pages/page-076.webp"
+    },
+    {
+      "pageNumber": 77,
+      "src": "/books/digital-bharat-pages/page-077.webp"
+    },
+    {
+      "pageNumber": 78,
+      "src": "/books/digital-bharat-pages/page-078.webp"
+    },
+    {
+      "pageNumber": 79,
+      "src": "/books/digital-bharat-pages/page-079.webp"
+    },
+    {
+      "pageNumber": 80,
+      "src": "/books/digital-bharat-pages/page-080.webp"
+    },
+    {
+      "pageNumber": 81,
+      "src": "/books/digital-bharat-pages/page-081.webp"
+    },
+    {
+      "pageNumber": 82,
+      "src": "/books/digital-bharat-pages/page-082.webp"
+    },
+    {
+      "pageNumber": 83,
+      "src": "/books/digital-bharat-pages/page-083.webp"
+    },
+    {
+      "pageNumber": 84,
+      "src": "/books/digital-bharat-pages/page-084.webp"
+    },
+    {
+      "pageNumber": 85,
+      "src": "/books/digital-bharat-pages/page-085.webp"
+    },
+    {
+      "pageNumber": 86,
+      "src": "/books/digital-bharat-pages/page-086.webp"
+    },
+    {
+      "pageNumber": 87,
+      "src": "/books/digital-bharat-pages/page-087.webp"
+    },
+    {
+      "pageNumber": 88,
+      "src": "/books/digital-bharat-pages/page-088.webp"
+    },
+    {
+      "pageNumber": 89,
+      "src": "/books/digital-bharat-pages/page-089.webp"
+    },
+    {
+      "pageNumber": 90,
+      "src": "/books/digital-bharat-pages/page-090.webp"
+    },
+    {
+      "pageNumber": 91,
+      "src": "/books/digital-bharat-pages/page-091.webp"
+    },
+    {
+      "pageNumber": 92,
+      "src": "/books/digital-bharat-pages/page-092.webp"
+    },
+    {
+      "pageNumber": 93,
+      "src": "/books/digital-bharat-pages/page-093.webp"
+    },
+    {
+      "pageNumber": 94,
+      "src": "/books/digital-bharat-pages/page-094.webp"
+    },
+    {
+      "pageNumber": 95,
+      "src": "/books/digital-bharat-pages/page-095.webp"
+    },
+    {
+      "pageNumber": 96,
+      "src": "/books/digital-bharat-pages/page-096.webp"
+    },
+    {
+      "pageNumber": 97,
+      "src": "/books/digital-bharat-pages/page-097.webp"
+    },
+    {
+      "pageNumber": 98,
+      "src": "/books/digital-bharat-pages/page-098.webp"
+    },
+    {
+      "pageNumber": 99,
+      "src": "/books/digital-bharat-pages/page-099.webp"
+    },
+    {
+      "pageNumber": 100,
+      "src": "/books/digital-bharat-pages/page-100.webp"
+    },
+    {
+      "pageNumber": 101,
+      "src": "/books/digital-bharat-pages/page-101.webp"
+    },
+    {
+      "pageNumber": 102,
+      "src": "/books/digital-bharat-pages/page-102.webp"
+    },
+    {
+      "pageNumber": 103,
+      "src": "/books/digital-bharat-pages/page-103.webp"
+    },
+    {
+      "pageNumber": 104,
+      "src": "/books/digital-bharat-pages/page-104.webp"
+    },
+    {
+      "pageNumber": 105,
+      "src": "/books/digital-bharat-pages/page-105.webp"
+    },
+    {
+      "pageNumber": 106,
+      "src": "/books/digital-bharat-pages/page-106.webp"
+    },
+    {
+      "pageNumber": 107,
+      "src": "/books/digital-bharat-pages/page-107.webp"
+    },
+    {
+      "pageNumber": 108,
+      "src": "/books/digital-bharat-pages/page-108.webp"
+    },
+    {
+      "pageNumber": 109,
+      "src": "/books/digital-bharat-pages/page-109.webp"
+    },
+    {
+      "pageNumber": 110,
+      "src": "/books/digital-bharat-pages/page-110.webp"
+    },
+    {
+      "pageNumber": 111,
+      "src": "/books/digital-bharat-pages/page-111.webp"
+    },
+    {
+      "pageNumber": 112,
+      "src": "/books/digital-bharat-pages/page-112.webp"
+    },
+    {
+      "pageNumber": 113,
+      "src": "/books/digital-bharat-pages/page-113.webp"
+    },
+    {
+      "pageNumber": 114,
+      "src": "/books/digital-bharat-pages/page-114.webp"
+    },
+    {
+      "pageNumber": 115,
+      "src": "/books/digital-bharat-pages/page-115.webp"
+    },
+    {
+      "pageNumber": 116,
+      "src": "/books/digital-bharat-pages/page-116.webp"
+    },
+    {
+      "pageNumber": 117,
+      "src": "/books/digital-bharat-pages/page-117.webp"
+    },
+    {
+      "pageNumber": 118,
+      "src": "/books/digital-bharat-pages/page-118.webp"
+    },
+    {
+      "pageNumber": 119,
+      "src": "/books/digital-bharat-pages/page-119.webp"
+    },
+    {
+      "pageNumber": 120,
+      "src": "/books/digital-bharat-pages/page-120.webp"
+    },
+    {
+      "pageNumber": 121,
+      "src": "/books/digital-bharat-pages/page-121.webp"
+    },
+    {
+      "pageNumber": 122,
+      "src": "/books/digital-bharat-pages/page-122.webp"
+    },
+    {
+      "pageNumber": 123,
+      "src": "/books/digital-bharat-pages/page-123.webp"
+    },
+    {
+      "pageNumber": 124,
+      "src": "/books/digital-bharat-pages/page-124.webp"
+    },
+    {
+      "pageNumber": 125,
+      "src": "/books/digital-bharat-pages/page-125.webp"
+    },
+    {
+      "pageNumber": 126,
+      "src": "/books/digital-bharat-pages/page-126.webp"
+    },
+    {
+      "pageNumber": 127,
+      "src": "/books/digital-bharat-pages/page-127.webp"
+    },
+    {
+      "pageNumber": 128,
+      "src": "/books/digital-bharat-pages/page-128.webp"
+    },
+    {
+      "pageNumber": 129,
+      "src": "/books/digital-bharat-pages/page-129.webp"
+    },
+    {
+      "pageNumber": 130,
+      "src": "/books/digital-bharat-pages/page-130.webp"
+    },
+    {
+      "pageNumber": 131,
+      "src": "/books/digital-bharat-pages/page-131.webp"
+    },
+    {
+      "pageNumber": 132,
+      "src": "/books/digital-bharat-pages/page-132.webp"
+    },
+    {
+      "pageNumber": 133,
+      "src": "/books/digital-bharat-pages/page-133.webp"
+    },
+    {
+      "pageNumber": 134,
+      "src": "/books/digital-bharat-pages/page-134.webp"
+    },
+    {
+      "pageNumber": 135,
+      "src": "/books/digital-bharat-pages/page-135.webp"
+    },
+    {
+      "pageNumber": 136,
+      "src": "/books/digital-bharat-pages/page-136.webp"
+    },
+    {
+      "pageNumber": 137,
+      "src": "/books/digital-bharat-pages/page-137.webp"
+    },
+    {
+      "pageNumber": 138,
+      "src": "/books/digital-bharat-pages/page-138.webp"
+    },
+    {
+      "pageNumber": 139,
+      "src": "/books/digital-bharat-pages/page-139.webp"
+    },
+    {
+      "pageNumber": 140,
+      "src": "/books/digital-bharat-pages/page-140.webp"
+    },
+    {
+      "pageNumber": 141,
+      "src": "/books/digital-bharat-pages/page-141.webp"
+    },
+    {
+      "pageNumber": 142,
+      "src": "/books/digital-bharat-pages/page-142.webp"
+    },
+    {
+      "pageNumber": 143,
+      "src": "/books/digital-bharat-pages/page-143.webp"
+    },
+    {
+      "pageNumber": 144,
+      "src": "/books/digital-bharat-pages/page-144.webp"
+    },
+    {
+      "pageNumber": 145,
+      "src": "/books/digital-bharat-pages/page-145.webp"
+    },
+    {
+      "pageNumber": 146,
+      "src": "/books/digital-bharat-pages/page-146.webp"
+    },
+    {
+      "pageNumber": 147,
+      "src": "/books/digital-bharat-pages/page-147.webp"
+    },
+    {
+      "pageNumber": 148,
+      "src": "/books/digital-bharat-pages/page-148.webp"
+    },
+    {
+      "pageNumber": 149,
+      "src": "/books/digital-bharat-pages/page-149.webp"
+    },
+    {
+      "pageNumber": 150,
+      "src": "/books/digital-bharat-pages/page-150.webp"
+    },
+    {
+      "pageNumber": 151,
+      "src": "/books/digital-bharat-pages/page-151.webp"
+    },
+    {
+      "pageNumber": 152,
+      "src": "/books/digital-bharat-pages/page-152.webp"
+    },
+    {
+      "pageNumber": 153,
+      "src": "/books/digital-bharat-pages/page-153.webp"
+    },
+    {
+      "pageNumber": 154,
+      "src": "/books/digital-bharat-pages/page-154.webp"
+    },
+    {
+      "pageNumber": 155,
+      "src": "/books/digital-bharat-pages/page-155.webp"
+    },
+    {
+      "pageNumber": 156,
+      "src": "/books/digital-bharat-pages/page-156.webp"
+    },
+    {
+      "pageNumber": 157,
+      "src": "/books/digital-bharat-pages/page-157.webp"
+    },
+    {
+      "pageNumber": 158,
+      "src": "/books/digital-bharat-pages/page-158.webp"
+    },
+    {
+      "pageNumber": 159,
+      "src": "/books/digital-bharat-pages/page-159.webp"
+    },
+    {
+      "pageNumber": 160,
+      "src": "/books/digital-bharat-pages/page-160.webp"
+    },
+    {
+      "pageNumber": 161,
+      "src": "/books/digital-bharat-pages/page-161.webp"
+    },
+    {
+      "pageNumber": 162,
+      "src": "/books/digital-bharat-pages/page-162.webp"
+    },
+    {
+      "pageNumber": 163,
+      "src": "/books/digital-bharat-pages/page-163.webp"
+    },
+    {
+      "pageNumber": 164,
+      "src": "/books/digital-bharat-pages/page-164.webp"
+    },
+    {
+      "pageNumber": 165,
+      "src": "/books/digital-bharat-pages/page-165.webp"
+    },
+    {
+      "pageNumber": 166,
+      "src": "/books/digital-bharat-pages/page-166.webp"
+    },
+    {
+      "pageNumber": 167,
+      "src": "/books/digital-bharat-pages/page-167.webp"
+    },
+    {
+      "pageNumber": 168,
+      "src": "/books/digital-bharat-pages/page-168.webp"
+    },
+    {
+      "pageNumber": 169,
+      "src": "/books/digital-bharat-pages/page-169.webp"
+    },
+    {
+      "pageNumber": 170,
+      "src": "/books/digital-bharat-pages/page-170.webp"
+    },
+    {
+      "pageNumber": 171,
+      "src": "/books/digital-bharat-pages/page-171.webp"
+    },
+    {
+      "pageNumber": 172,
+      "src": "/books/digital-bharat-pages/page-172.webp"
+    },
+    {
+      "pageNumber": 173,
+      "src": "/books/digital-bharat-pages/page-173.webp"
+    },
+    {
+      "pageNumber": 174,
+      "src": "/books/digital-bharat-pages/page-174.webp"
+    },
+    {
+      "pageNumber": 175,
+      "src": "/books/digital-bharat-pages/page-175.webp"
+    },
+    {
+      "pageNumber": 176,
+      "src": "/books/digital-bharat-pages/page-176.webp"
+    },
+    {
+      "pageNumber": 177,
+      "src": "/books/digital-bharat-pages/page-177.webp"
+    },
+    {
+      "pageNumber": 178,
+      "src": "/books/digital-bharat-pages/page-178.webp"
+    },
+    {
+      "pageNumber": 179,
+      "src": "/books/digital-bharat-pages/page-179.webp"
+    },
+    {
+      "pageNumber": 180,
+      "src": "/books/digital-bharat-pages/page-180.webp"
+    },
+    {
+      "pageNumber": 181,
+      "src": "/books/digital-bharat-pages/page-181.webp"
+    },
+    {
+      "pageNumber": 182,
+      "src": "/books/digital-bharat-pages/page-182.webp"
+    },
+    {
+      "pageNumber": 183,
+      "src": "/books/digital-bharat-pages/page-183.webp"
+    },
+    {
+      "pageNumber": 184,
+      "src": "/books/digital-bharat-pages/page-184.webp"
+    },
+    {
+      "pageNumber": 185,
+      "src": "/books/digital-bharat-pages/page-185.webp"
+    },
+    {
+      "pageNumber": 186,
+      "src": "/books/digital-bharat-pages/page-186.webp"
+    },
+    {
+      "pageNumber": 187,
+      "src": "/books/digital-bharat-pages/page-187.webp"
+    },
+    {
+      "pageNumber": 188,
+      "src": "/books/digital-bharat-pages/page-188.webp"
+    },
+    {
+      "pageNumber": 189,
+      "src": "/books/digital-bharat-pages/page-189.webp"
+    },
+    {
+      "pageNumber": 190,
+      "src": "/books/digital-bharat-pages/page-190.webp"
+    },
+    {
+      "pageNumber": 191,
+      "src": "/books/digital-bharat-pages/page-191.webp"
+    },
+    {
+      "pageNumber": 192,
+      "src": "/books/digital-bharat-pages/page-192.webp"
+    },
+    {
+      "pageNumber": 193,
+      "src": "/books/digital-bharat-pages/page-193.webp"
+    },
+    {
+      "pageNumber": 194,
+      "src": "/books/digital-bharat-pages/page-194.webp"
+    },
+    {
+      "pageNumber": 195,
+      "src": "/books/digital-bharat-pages/page-195.webp"
+    },
+    {
+      "pageNumber": 196,
+      "src": "/books/digital-bharat-pages/page-196.webp"
+    },
+    {
+      "pageNumber": 197,
+      "src": "/books/digital-bharat-pages/page-197.webp"
+    },
+    {
+      "pageNumber": 198,
+      "src": "/books/digital-bharat-pages/page-198.webp"
+    },
+    {
+      "pageNumber": 199,
+      "src": "/books/digital-bharat-pages/page-199.webp"
+    },
+    {
+      "pageNumber": 200,
+      "src": "/books/digital-bharat-pages/page-200.webp"
+    },
+    {
+      "pageNumber": 201,
+      "src": "/books/digital-bharat-pages/page-201.webp"
+    },
+    {
+      "pageNumber": 202,
+      "src": "/books/digital-bharat-pages/page-202.webp"
+    },
+    {
+      "pageNumber": 203,
+      "src": "/books/digital-bharat-pages/page-203.webp"
+    },
+    {
+      "pageNumber": 204,
+      "src": "/books/digital-bharat-pages/page-204.webp"
+    },
+    {
+      "pageNumber": 205,
+      "src": "/books/digital-bharat-pages/page-205.webp"
+    },
+    {
+      "pageNumber": 206,
+      "src": "/books/digital-bharat-pages/page-206.webp"
+    },
+    {
+      "pageNumber": 207,
+      "src": "/books/digital-bharat-pages/page-207.webp"
+    },
+    {
+      "pageNumber": 208,
+      "src": "/books/digital-bharat-pages/page-208.webp"
+    },
+    {
+      "pageNumber": 209,
+      "src": "/books/digital-bharat-pages/page-209.webp"
+    },
+    {
+      "pageNumber": 210,
+      "src": "/books/digital-bharat-pages/page-210.webp"
+    },
+    {
+      "pageNumber": 211,
+      "src": "/books/digital-bharat-pages/page-211.webp"
+    },
+    {
+      "pageNumber": 212,
+      "src": "/books/digital-bharat-pages/page-212.webp"
+    },
+    {
+      "pageNumber": 213,
+      "src": "/books/digital-bharat-pages/page-213.webp"
+    },
+    {
+      "pageNumber": 214,
+      "src": "/books/digital-bharat-pages/page-214.webp"
+    },
+    {
+      "pageNumber": 215,
+      "src": "/books/digital-bharat-pages/page-215.webp"
+    },
+    {
+      "pageNumber": 216,
+      "src": "/books/digital-bharat-pages/page-216.webp"
+    },
+    {
+      "pageNumber": 217,
+      "src": "/books/digital-bharat-pages/page-217.webp"
+    },
+    {
+      "pageNumber": 218,
+      "src": "/books/digital-bharat-pages/page-218.webp"
+    },
+    {
+      "pageNumber": 219,
+      "src": "/books/digital-bharat-pages/page-219.webp"
+    },
+    {
+      "pageNumber": 220,
+      "src": "/books/digital-bharat-pages/page-220.webp"
+    },
+    {
+      "pageNumber": 221,
+      "src": "/books/digital-bharat-pages/page-221.webp"
+    },
+    {
+      "pageNumber": 222,
+      "src": "/books/digital-bharat-pages/page-222.webp"
+    },
+    {
+      "pageNumber": 223,
+      "src": "/books/digital-bharat-pages/page-223.webp"
+    },
+    {
+      "pageNumber": 224,
+      "src": "/books/digital-bharat-pages/page-224.webp"
+    },
+    {
+      "pageNumber": 225,
+      "src": "/books/digital-bharat-pages/page-225.webp"
+    },
+    {
+      "pageNumber": 226,
+      "src": "/books/digital-bharat-pages/page-226.webp"
+    },
+    {
+      "pageNumber": 227,
+      "src": "/books/digital-bharat-pages/page-227.webp"
+    },
+    {
+      "pageNumber": 228,
+      "src": "/books/digital-bharat-pages/page-228.webp"
+    },
+    {
+      "pageNumber": 229,
+      "src": "/books/digital-bharat-pages/page-229.webp"
+    },
+    {
+      "pageNumber": 230,
+      "src": "/books/digital-bharat-pages/page-230.webp"
+    },
+    {
+      "pageNumber": 231,
+      "src": "/books/digital-bharat-pages/page-231.webp"
+    }
+  ]
+}

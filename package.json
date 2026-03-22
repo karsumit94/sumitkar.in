@@ -3,27 +3,43 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "generate:books": "node scripts/generate-book-pages.mjs",
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "lint": "eslint ."
   },
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.97",
     "@react-router/node": "7.13.1",
     "@react-router/serve": "7.13.1",
+    "@tailwindcss/typography": "^0.5.19",
+    "gray-matter": "^4.0.3",
     "isbot": "^5.1.36",
+    "lucide-react": "^0.577.0",
+    "marked": "^17.0.5",
+    "pdfjs-dist": "^5.5.207",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router": "7.13.1"
+    "react-pageflip": "^2.0.3",
+    "react-pdf": "^10.4.1",
+    "react-router": "7.13.1",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@react-router/dev": "7.13.1",
     "@tailwindcss/vite": "^4.2.2",
+    "@types/marked": "^5.0.2",
     "@types/node": "^22",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.2",
     "vite": "^7.1.7",
     "vite-tsconfig-paths": "^5.1.4"
   }

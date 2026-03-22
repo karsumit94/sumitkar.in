@@ -6,11 +6,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { useEffect } from "react";
 
 import type { Route } from "./+types/root";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", href: "/icons/icon.svg", type: "image/svg+xml" },
+  { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
+  { rel: "manifest", href: "/manifest.webmanifest" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -19,7 +23,7 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap",
   },
 ];
 
@@ -29,8 +33,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#04070f" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Sumit Kar" />
+        <meta name="application-name" content="Sumit Kar" />
         <Meta />
         <Links />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT-ID"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MEASUREMENT-ID');
+            `,
+          }}
+        />
       </head>
       <body>
         {children}
@@ -42,19 +64,33 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  useEffect(() => {
+    if (!("serviceWorker" in navigator)) {
+      return;
+    }
+
+    window.addEventListener("load", () => {
+      void navigator.serviceWorker.register("/sw.js");
+    });
+  }, []);
+
   return <Outlet />;
 }
 
+import { SystemError } from "./components/ui/SystemError";
+
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  let status = 500;
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
 
   if (isRouteErrorResponse(error)) {
-    message = error.status === 404 ? "404" : "Error";
+    status = error.status;
+    message = error.status === 404 ? "System Not Found" : "Component Error";
     details =
       error.status === 404
-        ? "The requested page could not be found."
+        ? "The requested neural pathway could not be located in the current system architecture. Please check the URL or return to main console."
         : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
@@ -62,14 +98,11 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
-    </main>
+    <SystemError
+      status={status}
+      message={message}
+      details={details}
+      stack={stack}
+    />
   );
 }

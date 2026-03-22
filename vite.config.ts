@@ -4,5 +4,22 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      onwarn(warning, warn) {
+        if (
+          warning.code === "EMPTY_BUNDLE" &&
+          typeof warning.message === "string" &&
+          ['"sitemap"', '"robots"', '"rss"'].some((name) =>
+            warning.message.includes(name)
+          )
+        ) {
+          return;
+        }
+
+        warn(warning);
+      },
+    },
+  },
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
