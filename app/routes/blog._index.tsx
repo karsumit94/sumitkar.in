@@ -1,7 +1,8 @@
-import { Link, redirect, useLoaderData } from "react-router";
+import { Link, redirect, useLoaderData, useLocation } from "react-router";
 import type { Route } from "./+types/blog._index";
 import { getPosts } from "../utils/blog.server";
 import { BaseLayout } from "../components/BaseLayout";
+import { BlogSearch } from "../components/blog/BlogSearch";
 import { getBlogTagHref } from "../utils/blog";
 import {
   SITE_IMAGE,
@@ -11,7 +12,7 @@ import {
   serializeJsonLd,
 } from "../utils/seo";
 
-export function meta({ data }: Route.MetaArgs) {
+export function meta({ data: _data }: Route.MetaArgs) {
   const title = "Blog — Sumit Kar";
   const description = "Engineering insights, backend systems, and AI architecture by Sumit Kar.";
   const url = `${SITE_URL}/blog`;
@@ -45,6 +46,10 @@ export async function loader({ request }: Route.LoaderArgs) {
 
 export default function BlogIndex() {
   const { posts } = useLoaderData<typeof loader>();
+  const { search } = useLocation();
+  const activeQuery = new URLSearchParams(search).get("q")?.trim() ?? "";
+  const isSearchMode = activeQuery.length >= 2;
+  const suggestedTopics = [...new Set(posts.flatMap((post) => post.tags))];
   const blogJsonLd = blogIndexJsonLd(posts);
   const breadcrumbs = breadcrumbJsonLd([
     { name: "Home", item: SITE_URL },
@@ -73,7 +78,10 @@ export default function BlogIndex() {
             </p>
           </div>
 
-          <div className="grid gap-8">
+          <BlogSearch suggestions={suggestedTopics} />
+
+          {!isSearchMode ? (
+            <div className="grid gap-8">
             {posts.map((post, i) => (
               <article key={post.slug} className="project-card visible group" style={{ animationDelay: `${i * 100}ms` }}>
                 <Link to={`/blog/${post.year}/${post.month}/${post.slug}`} className="absolute inset-0 z-10" aria-label={`Read ${post.title}`}></Link>
@@ -121,8 +129,13 @@ export default function BlogIndex() {
                 </div>
               </article>
             ))}
-          </div>
-          {posts.length === 0 ? (
+            </div>
+          ) : (
+            <div className="rounded-[24px] border border-white/8 bg-white/[0.02] px-5 py-4 text-sm leading-relaxed text-[rgba(200,216,240,0.66)]">
+              Search results are shown above. Clear the query to return to the full transmission log.
+            </div>
+          )}
+          {!isSearchMode && posts.length === 0 ? (
             <div className="project-card visible mt-8">
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-cyan-400 mb-3">No Matching Entries</div>
               <p className="text-[rgba(200,216,240,0.68)] font-light leading-relaxed">

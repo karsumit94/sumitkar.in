@@ -57,7 +57,7 @@ export async function getPost(slug: string) {
   try {
     const file = await fs.readFile(filepath);
     const { data, content } = matter(file.toString());
-    const html = marked.parse(content);
+    const html = await marked.parse(content);
     const date = new Date(data.date);
     return { 
         slug, 

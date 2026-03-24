@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
 import type { MouseEvent } from "react";
+import { useMemo } from "react";
+import { useLocation } from "react-router";
 import { useActiveSection } from "../hooks/useActiveSection";
+
 interface NavbarProps {
   onNavClick?: (e: MouseEvent<HTMLAnchorElement>, targetId: string) => void;
 }
@@ -34,12 +36,8 @@ const NAV_ITEMS = [
 ];
 
 export function Navbar({ onNavClick }: NavbarProps) {
-  const [pathname, setPathname] = useState("/");
+  const { pathname } = useLocation();
   const isHomePage = pathname === "/";
-
-  useEffect(() => {
-    setPathname(window.location.pathname);
-  }, []);
   
   const sectionIds = useMemo(() => 
     NAV_ITEMS.filter(item => item.id.startsWith('#')).map(item => item.id),
@@ -109,6 +107,22 @@ export function Navbar({ onNavClick }: NavbarProps) {
             </li>
           ))}
         </ul>
+
+        <form action="/blog" method="get" className="nav-search hidden lg:flex" role="search">
+          <label htmlFor="nav-search-input" className="sr-only">
+            Search blog posts
+          </label>
+          <input
+            id="nav-search-input"
+            name="q"
+            type="search"
+            placeholder="Search blog logs..."
+            className="nav-search-input"
+          />
+          <button type="submit" className="nav-search-button">
+            Search
+          </button>
+        </form>
 
         <div className="nav-status">
           <div className="status-dot"></div>

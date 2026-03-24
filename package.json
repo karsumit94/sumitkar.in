@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "generate:books": "node scripts/generate-book-pages.mjs",
-    "build": "react-router build",
+    "build": "react-router build && node scripts/build-pagefind-index.mjs",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
@@ -37,6 +37,7 @@
     "eslint": "^9.39.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
+    "pagefind": "^1.4.0",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.2",
