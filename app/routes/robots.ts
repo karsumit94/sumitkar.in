@@ -5,6 +5,18 @@ export async function loader({ request }: Route.LoaderArgs) {
   const robots = `User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: ${new URL("/sitemap.xml", origin).toString()}
 `;
 

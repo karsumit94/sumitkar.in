@@ -11,6 +11,7 @@ export type Post = {
   category: string;
   tags: string[];
   author: string;
+  ogImage?: string;
   year: string;
   month: string;
 };
@@ -22,9 +23,31 @@ export type PostMarkdownAttributes = {
   category: string;
   tags: string[];
   author: string;
+  ogImage?: string;
+  og_image?: string;
+  image?: string;
 };
 
 const postsPath = path.join(process.cwd(), "blogs");
+
+function getPostOgImage(data: Record<string, unknown>): string | undefined {
+  const ogImage = data.ogImage;
+  if (typeof ogImage === "string" && ogImage.trim().length > 0) {
+    return ogImage;
+  }
+
+  const ogImageSnake = data.og_image;
+  if (typeof ogImageSnake === "string" && ogImageSnake.trim().length > 0) {
+    return ogImageSnake;
+  }
+
+  const image = data.image;
+  if (typeof image === "string" && image.trim().length > 0) {
+    return image;
+  }
+
+  return undefined;
+}
 
 export async function getPosts(): Promise<Post[]> {
   const dir = await fs.readdir(postsPath);
@@ -43,6 +66,7 @@ export async function getPosts(): Promise<Post[]> {
           category: data.category || "General",
           tags: data.tags || [],
           author: data.author || "Sumit Kar",
+          ogImage: getPostOgImage(data),
           year: date.getFullYear().toString(),
           month: (date.getMonth() + 1).toString().padStart(2, '0'),
         };
@@ -67,6 +91,7 @@ export async function getPost(slug: string) {
         category: data.category || "General",
         tags: data.tags || [],
         author: data.author || "Sumit Kar",
+        ogImage: getPostOgImage(data),
         year: date.getFullYear().toString(),
         month: (date.getMonth() + 1).toString().padStart(2, '0'),
         html 

@@ -17,7 +17,7 @@ export function Contact({ onNavClick }: ContactProps) {
     <section id="contact">
       <div className="contact-inner">
         <div className="section-label" style={{ justifyContent: 'center' }}>Signal Detected</div>
-        <h1 className="contact-title">Let&apos;s<br /><span className="line2">Connect.</span></h1>
+        <h2 className="contact-title">Let&apos;s<br /><span className="line2">Connect.</span></h2>
         <p className="contact-sub">Staff Engineer. System thinker. Always open to interesting problems.</p>
         <div className="contact-links">
           <a href="mailto:hello@sumitkar.in" className="contact-link" onClick={(e) => handleNavClick(e, 'mailto:hello@sumitkar.in')}>

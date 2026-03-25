@@ -108,13 +108,17 @@ export function meta(_: Route.MetaArgs) {
     { name: "robots", content: "index,follow" },
     { property: "og:title", content: `${BOOK_TITLE} — ${SITE_NAME}` },
     { property: "og:description", content: BOOK_DESCRIPTION },
+    { property: "og:site_name", content: SITE_NAME },
     { property: "og:type", content: "book" },
     { property: "og:url", content: pageUrl },
     { property: "og:image", content: absoluteUrl(bookData.coverPath) },
+    { property: "og:image:alt", content: `${BOOK_TITLE} book cover` },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: `${BOOK_TITLE} — ${SITE_NAME}` },
     { name: "twitter:description", content: BOOK_DESCRIPTION },
     { name: "twitter:image", content: absoluteUrl(bookData.coverPath) },
+    { name: "twitter:image:alt", content: `${BOOK_TITLE} book cover` },
+    { tagName: "link", rel: "canonical", href: pageUrl },
   ];
 }
 

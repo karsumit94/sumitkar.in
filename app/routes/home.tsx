@@ -14,11 +14,12 @@ import { useScrollObserver } from "../hooks/useScrollObserver";
 import { useParallax } from "../hooks/useParallax";
 import { useEffect } from "react";
 import {
+  DEFAULT_OG_IMAGE,
+  HOME_META_TITLE,
   SITE_DESCRIPTION,
-  SITE_IMAGE,
-  SITE_NAME,
   SITE_URL,
   homePageJsonLd,
+  organizationJsonLd,
   personJsonLd,
   serializeJsonLd,
   websiteJsonLd,
@@ -26,18 +27,22 @@ import {
 
 export function meta(_: Route.MetaArgs) {
   return [
-    { title: "Sumit Kar — Staff Engineer · AI Systems Architect" },
+    { title: HOME_META_TITLE },
     { name: "description", content: SITE_DESCRIPTION },
     { name: "robots", content: "index,follow" },
-    { property: "og:title", content: "Sumit Kar — Staff Engineer · AI Systems Architect" },
+    { property: "og:title", content: HOME_META_TITLE },
     { property: "og:description", content: SITE_DESCRIPTION },
+    { property: "og:site_name", content: "Sumit Kar" },
     { property: "og:type", content: "website" },
     { property: "og:url", content: SITE_URL },
-    { property: "og:image", content: SITE_IMAGE },
+    { property: "og:image", content: DEFAULT_OG_IMAGE },
+    { property: "og:image:alt", content: "Sumit Kar website social preview" },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "Sumit Kar — Staff Engineer · AI Systems Architect" },
+    { name: "twitter:title", content: HOME_META_TITLE },
     { name: "twitter:description", content: SITE_DESCRIPTION },
-    { name: "twitter:image", content: SITE_IMAGE },
+    { name: "twitter:image", content: DEFAULT_OG_IMAGE },
+    { name: "twitter:image:alt", content: "Sumit Kar website social preview" },
+    { tagName: "link", rel: "canonical", href: SITE_URL },
     { name: "keywords", content: "Sumit Kar, Staff Engineer, AI Systems Architect, Backend Systems, System Design, Distributed Systems, RAG, Microservices" },
   ];
 }
@@ -81,6 +86,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: serializeJsonLd(personJsonLd()),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(organizationJsonLd()),
         }}
       />
       <script

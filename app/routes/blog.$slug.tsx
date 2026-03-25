@@ -4,12 +4,12 @@ import type { Route } from "./+types/blog.$slug";
 import { BaseLayout } from "../components/BaseLayout";
 import { getBlogTagHref } from "../utils/blog";
 import {
-  SITE_IMAGE,
   SITE_NAME,
   SITE_URL,
   blogPostingJsonLd,
   breadcrumbJsonLd,
   personJsonLd,
+  resolveOgImageUrl,
   serializeJsonLd,
 } from "../utils/seo";
 
@@ -21,20 +21,25 @@ export function meta({ data }: Route.MetaArgs) {
     ];
   }
   const postUrl = `${SITE_URL}/blog/${data.post.year}/${data.post.month}/${data.post.slug}`;
+  const ogImage = resolveOgImageUrl(data.post.ogImage);
   return [
     { title: `${data.post.title} — Sumit Kar` },
     { name: "description", content: data.post.description },
     { name: "robots", content: "index,follow" },
     { property: "og:title", content: `${data.post.title} — Sumit Kar` },
     { property: "og:description", content: data.post.description },
+    { property: "og:site_name", content: "Sumit Kar" },
     { property: "og:type", content: "article" },
     { property: "og:url", content: postUrl },
-    { property: "og:image", content: SITE_IMAGE },
+    { property: "og:image", content: ogImage },
+    { property: "og:image:alt", content: `${data.post.title} social preview image` },
     { name: "author", content: data.post.author },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: `${data.post.title} — ${SITE_NAME}` },
     { name: "twitter:description", content: data.post.description },
-    { name: "twitter:image", content: SITE_IMAGE },
+    { name: "twitter:image", content: ogImage },
+    { name: "twitter:image:alt", content: `${data.post.title} social preview image` },
+    { tagName: "link", rel: "canonical", href: postUrl },
     { property: "article:published_time", content: data.post.date },
     { property: "article:author", content: data.post.author },
     { property: "article:section", content: data.post.category },

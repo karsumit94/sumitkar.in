@@ -14,6 +14,9 @@ const HERO_NAME_STYLE = {
 export function Hero() {
   return (
     <section id="hero-new" className="hero-section">
+      <h1 className="sr-only">
+        Sumit Kar | Staff Engineer for AI Systems and Backend Scale
+      </h1>
       <div className="hero-mobile-stage md:hidden">
         <div className="hero-mobile-stars" />
         <div className="hero-mobile-copy">
@@ -22,7 +25,7 @@ export function Hero() {
               {"// Staff Engineer · AI Systems Architect"}
             </span>
           </div>
-          <h1
+          <p
             style={{
               ...HERO_NAME_STYLE,
               lineHeight: 0.9,
@@ -31,7 +34,7 @@ export function Hero() {
             }}
           >
             Sumit Kar
-          </h1>
+          </p>
           <p
             className="mt-3 text-sm text-[rgba(200,216,240,0.65)] font-light leading-relaxed"
             style={{ fontFamily: "var(--font-body)", maxWidth: "280px" }}
@@ -82,9 +85,9 @@ export function Hero() {
                     {"// Staff Engineer · AI Systems Architect"}
                   </span>
                 </div>
-                <h1 className="hero-display-title" style={HERO_NAME_STYLE}>
+                <p className="hero-display-title" style={HERO_NAME_STYLE}>
                   Sumit Kar
-                </h1>
+                </p>
               </div>
 
               <div className="hero-info-panel">

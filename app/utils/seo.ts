@@ -3,8 +3,11 @@ import type { Post } from "./blog.server";
 export const SITE_NAME = "Sumit Kar";
 export const SITE_URL = "https://sumitkar.in";
 export const SITE_DESCRIPTION =
-  "Staff Engineer focused on AI systems, resilient backend architecture, and product-minded engineering.";
+  "Staff Engineer sharing insights on AI systems, resilient backend architecture, distributed design, and product-focused engineering at enterprise scale.";
+export const HOME_META_TITLE =
+  "Sumit Kar | Staff Engineer for AI Systems & Backend Scale";
 export const SITE_IMAGE = `${SITE_URL}/images/SumitKar.in.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/landing.png`;
 export const PERSON_IMAGE = `${SITE_URL}/images/me.png`;
 export const PERSON_LINKEDIN = "https://www.linkedin.com/in/timusrak";
 
@@ -51,6 +54,17 @@ export function websiteJsonLd() {
   };
 }
 
+export function organizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: SITE_IMAGE,
+    sameAs: [PERSON_LINKEDIN],
+  };
+}
+
 export function homePageJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -69,9 +83,21 @@ export function homePageJsonLd() {
     },
     primaryImageOfPage: {
       "@type": "ImageObject",
-      url: SITE_IMAGE,
+      url: DEFAULT_OG_IMAGE,
     },
   };
+}
+
+export function resolveOgImageUrl(ogImage?: string) {
+  if (!ogImage) {
+    return DEFAULT_OG_IMAGE;
+  }
+
+  try {
+    return new URL(ogImage).toString();
+  } catch {
+    return absoluteUrl(ogImage.startsWith("/") ? ogImage : `/${ogImage}`);
+  }
 }
 
 export function blogIndexJsonLd(posts: Post[], activeTag?: string) {
@@ -141,7 +167,7 @@ export function blogPostingJsonLd(post: Post & { html?: string }) {
         url: SITE_IMAGE,
       },
     },
-    image: PERSON_IMAGE,
+    image: resolveOgImageUrl(post.ogImage),
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {

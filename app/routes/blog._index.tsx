@@ -5,7 +5,7 @@ import { BaseLayout } from "../components/BaseLayout";
 import { BlogSearch } from "../components/blog/BlogSearch";
 import { getBlogTagHref } from "../utils/blog";
 import {
-  SITE_IMAGE,
+  DEFAULT_OG_IMAGE,
   SITE_URL,
   blogIndexJsonLd,
   breadcrumbJsonLd,
@@ -14,7 +14,8 @@ import {
 
 export function meta({ data: _data }: Route.MetaArgs) {
   const title = "Blog — Sumit Kar";
-  const description = "Engineering insights, backend systems, and AI architecture by Sumit Kar.";
+  const description =
+    "Explore backend engineering, AI architecture, authentication, and system design notes by Sumit Kar, with practical guides from production-scale software delivery.";
   const url = `${SITE_URL}/blog`;
   return [
     { title },
@@ -22,13 +23,17 @@ export function meta({ data: _data }: Route.MetaArgs) {
     { name: "robots", content: "index,follow" },
     { property: "og:title", content: title },
     { property: "og:description", content: description },
+    { property: "og:site_name", content: "Sumit Kar" },
     { property: "og:type", content: "website" },
     { property: "og:url", content: url },
-    { property: "og:image", content: SITE_IMAGE },
+    { property: "og:image", content: DEFAULT_OG_IMAGE },
+    { property: "og:image:alt", content: "Sumit Kar blog social preview" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: title },
     { name: "twitter:description", content: description },
-    { name: "twitter:image", content: SITE_IMAGE },
+    { name: "twitter:image", content: DEFAULT_OG_IMAGE },
+    { name: "twitter:image:alt", content: "Sumit Kar blog social preview" },
+    { tagName: "link", rel: "canonical", href: url },
   ];
 }
 
