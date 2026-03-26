@@ -69,6 +69,11 @@ export function Hero() {
             src="/images/me.png"
             alt="Sumit Kar"
             className="block ml-auto pointer-events-none relative hero-portrait-mobile"
+            width={400}
+            height={600}
+            decoding="async"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
       </div>
@@ -131,6 +136,11 @@ export function Hero() {
                 src="/images/me.png"
                 alt="Sumit Kar"
                 className="hero-portrait-desktop"
+                width={400}
+                height={600}
+                decoding="async"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
           </div>

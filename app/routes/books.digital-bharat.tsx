@@ -50,6 +50,9 @@ const BookCoverPage = forwardRef<HTMLDivElement>(function BookCoverPage(_, ref) 
           src={bookData.coverPath}
           alt={`${BOOK_TITLE} cover`}
           className="book-reader-cover-image"
+          width={1294}
+          height={2000}
+          decoding="async"
         />
       </div>
     </div>
@@ -71,7 +74,15 @@ const BookImagePage = forwardRef<
   return (
     <div ref={ref} className="book-flip-page">
       <div className="book-pdf-page-shell">
-        <img src={src} alt={`${BOOK_TITLE} page ${pageNumber}`} className="book-reader-page-image" />
+        <img
+          src={src}
+          alt={`${BOOK_TITLE} page ${pageNumber}`}
+          className="book-reader-page-image"
+          width={1294}
+          height={2000}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   );
@@ -306,6 +317,10 @@ export default function DigitalBharatBookPage() {
                 src={bookData.coverPath}
                 alt={`${BOOK_TITLE} front cover`}
                 className="book-cover-image"
+                width={1294}
+                height={2000}
+                decoding="async"
+                fetchPriority="high"
               />
             </div>
           </div>

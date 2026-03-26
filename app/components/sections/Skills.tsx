@@ -23,7 +23,14 @@ export function Skills() {
               {cat.skills.map((skill, j) => (
                 <div key={j} className="bento-skill">
                   <div className="bento-icon">
-                    <img src={`/images/skillsets/${skill.img}`} alt={skill.name} />
+                    <img
+                      src={`/images/skillsets/${skill.img}`}
+                      alt={skill.name}
+                      width={200}
+                      height={200}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div className="bento-info">
                     <div className="bento-name">{skill.name}</div>

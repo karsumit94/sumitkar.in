@@ -135,7 +135,15 @@ export default function BlogPost() {
             <div className="author-panel">
               <div className="author-panel-avatar">
                 <div className="author-panel-avatar-ring"></div>
-                <img src="/images/me.png" alt={post.author} className="author-panel-image" />
+                <img
+                  src="/images/me.png"
+                  alt={post.author}
+                  className="author-panel-image"
+                  width={400}
+                  height={600}
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div className="author-panel-body">

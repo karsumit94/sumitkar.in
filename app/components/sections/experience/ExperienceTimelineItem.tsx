@@ -23,7 +23,15 @@ export function ExperienceTimelineItem({
       </div>
       <div className="exp-body">
         <div className="exp-company">
-          <img src={item.logo} alt={item.company} className="exp-logo" />
+          <img
+            src={item.logo}
+            alt={item.company}
+            className="exp-logo"
+            width={200}
+            height={200}
+            loading="lazy"
+            decoding="async"
+          />
           {item.company}
         </div>
         <div className="exp-title">{item.role}</div>

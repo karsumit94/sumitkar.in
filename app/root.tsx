@@ -11,6 +11,8 @@ import { useEffect } from "react";
 import type { Route } from "./+types/root";
 import "./app.css";
 
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+
 export const links: Route.LinksFunction = () => [
   { rel: "icon", href: "/icons/icon.svg", type: "image/svg+xml" },
   { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
@@ -41,18 +43,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="application-name" content="Sumit Kar" />
         <Meta />
         <Links />
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT-ID"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-MEASUREMENT-ID');
-            `,
-          }}
-        />
       </head>
       <body>
         {children}
@@ -72,6 +62,59 @@ export default function App() {
     window.addEventListener("load", () => {
       void navigator.serviceWorker.register("/sw.js");
     });
+  }, []);
+
+  useEffect(() => {
+    if (!import.meta.env.PROD) {
+      return;
+    }
+
+    if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID.includes("MEASUREMENT-ID")) {
+      return;
+    }
+
+    const loadAnalytics = () => {
+      const scopedWindow = window as typeof window & {
+        dataLayer?: unknown[];
+        gtag?: (...args: unknown[]) => void;
+      };
+
+      if (scopedWindow.gtag) {
+        return;
+      }
+
+      scopedWindow.dataLayer = scopedWindow.dataLayer || [];
+      scopedWindow.gtag = (...args: unknown[]) => {
+        scopedWindow.dataLayer?.push(args);
+      };
+      scopedWindow.gtag("js", new Date());
+      scopedWindow.gtag("config", GA_MEASUREMENT_ID);
+
+      const script = document.createElement("script");
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(
+        GA_MEASUREMENT_ID
+      )}`;
+      script.async = true;
+      document.head.appendChild(script);
+    };
+
+    const idleWindow = window as typeof window & {
+      requestIdleCallback?: (
+        callback: IdleRequestCallback,
+        options?: IdleRequestOptions
+      ) => number;
+      cancelIdleCallback?: (handle: number) => void;
+    };
+
+    if (typeof idleWindow.requestIdleCallback === "function") {
+      const idleId = idleWindow.requestIdleCallback(() => {
+        loadAnalytics();
+      }, { timeout: 5000 });
+      return () => idleWindow.cancelIdleCallback?.(idleId);
+    }
+
+    const timeoutId = window.setTimeout(loadAnalytics, 2500);
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   return <Outlet />;

@@ -70,7 +70,15 @@ export function Navbar({ onNavClick }: NavbarProps) {
       <nav>
         <div className="nav-logo">
           <a href="/">
-            <img src="/images/SumitKar.in.png" alt="Sumit Kar" className="site-logo" />
+            <img
+              src="/images/SumitKar.in.png"
+              alt="Sumit Kar"
+              className="site-logo"
+              width={200}
+              height={75}
+              decoding="async"
+              fetchPriority="high"
+            />
           </a>
         </div>
 

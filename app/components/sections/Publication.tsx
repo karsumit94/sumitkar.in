@@ -17,6 +17,10 @@ export function Publication() {
                 src="/books/Digital-Bharat-Book-Front-Cover.jpg"
                 alt="Digital Bharat book cover"
                 className="publication-cover-image"
+                width={1294}
+                height={2000}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </a>

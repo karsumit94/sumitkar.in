@@ -51,7 +51,8 @@ body {
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s, background 0.2s;
+  transition: background 0.2s;
+  will-change: transform;
   box-shadow: 0 0 16px var(--blue-glow), 0 0 40px rgba(0, 212, 255, 0.3);
 }
 
@@ -64,7 +65,8 @@ body {
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
-  transition: all 0.18s ease;
+  transition: width 0.18s ease, height 0.18s ease, border-color 0.18s ease;
+  will-change: transform;
 }
 
 body:hover #cursor {
@@ -2368,16 +2370,17 @@ footer {
 
 @keyframes scanline {
   from {
-    top: -2%;
+    transform: translateY(-120%);
   }
 
   to {
-    top: 100%;
+    transform: translateY(120%);
   }
 }
 
 .scanline {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   height: 2px;
@@ -2385,6 +2388,7 @@ footer {
   pointer-events: none;
   z-index: 3;
   animation: scanline 8s linear infinite;
+  will-change: transform;
 }
 
 @media(max-width:768px) {
@@ -2437,6 +2441,7 @@ footer {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
     animation: scanline 4s linear infinite;
+    will-change: transform;
   }
 
   .nav-status {
@@ -2562,6 +2567,17 @@ footer {
     text-align: center;
     padding: 40px 24px;
     margin-bottom: 80px;
+  }
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: none;
   }
 }
 
